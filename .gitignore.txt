@@ -1,13 +1,89 @@
-Ignore Jupyter notebook checkpoints
-.ipynb_checkpoints/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
-Ignore Python cache
-pycache/
-*.pyc
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-Ignore dataset if too large
-data/*.csv
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
-Environment files
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environments
 .env
+.venv
+env/
 venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data files
+*.csv
+*.json
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.npy
+*.db
+*.sqlite
+
+# Model files
+models/*.pkl
+models/*.pickle
+models/*.h5
+models/*.joblib
+
+# Logs and outputs
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Exceptions (if you want to keep some data files in the repo)
+!data/README.md
+!data/.gitkeep

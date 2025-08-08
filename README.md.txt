@@ -1,35 +1,68 @@
-# 🌸 Iris Flower Classification - Machine Learning Project
+# 📧 Email Spam Detection with Machine Learning
 
-## 📌 Overview
-This project classifies Iris flowers into three species (*Setosa*, *Versicolor*, and *Virginica*) based on their sepal and petal measurements using **Machine Learning**.  
-The dataset used is the famous [Iris dataset](https://www.kaggle.com/api/v1/datasets/download/saurabh00007/iriscsv).
+This project uses Python and machine learning techniques to build a spam email classifier using the SMS Spam Collection Dataset. It applies natural language processing (NLP) to distinguish between spam and ham (non-spam) messages.
 
 ---
 
-## 📊 Project Workflow
-1. **Data Loading & Exploration**  
-   - Load dataset from CSV  
-   - Check for missing values  
-   - Visualize data distribution
+## 📁 Dataset
 
-2. **Data Preprocessing**  
-   - Feature scaling  
-   - Train-test split
-
-3. **Model Training**  
-   - Logistic Regression / SVM / Decision Tree (choose best model)  
-   - Evaluate accuracy
-
-4. **Model Evaluation**  
-   - Confusion matrix  
-   - Accuracy, precision, recall  
-   - Visualization of results
+- **Source**: SMS Spam Collection Dataset (from UCI/Kaggle)
+- **Columns**:
+  - `label`: "ham" or "spam"
+  - `message`: the text message content
 
 ---
 
-## 🛠 Installation & Usage
+## 🧠 Machine Learning Model
 
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/FrostRookie/Iris_Classification.git
-cd Iris-Flower-Classification
+- **Text Vectorization**: TF-IDF (`TfidfVectorizer`)
+- **Classifier**: Multinomial Naive Bayes (ideal for text classification)
+
+---
+
+## 📊 Results
+
+| Label | Count |
+|-------|-------|
+| Ham   | 4825  |
+| Spam  | 747   |
+
+- **Accuracy**: ~98%
+- **Evaluation Metrics**: Confusion Matrix, Classification Report
+
+---
+
+## 📉 Visualizations
+
+- Label distribution bar chart
+- Confusion matrix heatmap
+- Sample prediction outputs
+
+---
+
+## 📦 Requirements
+
+- Python 3.x
+- pandas
+- scikit-learn
+- matplotlib
+- seaborn
+
+---
+
+## 🚀 How to Run
+
+1. Upload the dataset (`spam.csv`) to your notebook or environment.
+2. Run the Jupyter Notebook: `Email_Spam_Detection_Kaggle.ipynb`
+3. View model performance, graphs, and try predictions on custom messages.
+
+---
+
+## 📌 Sample Predictions
+Message: "Congratulations! You've won a free ticket to Bahamas. Call now!"
+Prediction: Spam
+
+Message: "Hey, are we still meeting for lunch today?"
+Prediction: Ham
+
+Made by Shubh Patel
